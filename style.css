@@ -1,0 +1,35 @@
+.header_div {
+    background: rgb(135, 56, 74);
+    color: rgb(245, 179, 179);
+}
+#content_c {
+    background: rgb(245, 179, 179);
+}
+#dnf {
+    margin-bottom: -13px;
+}
+#r {
+    display: inline-block;
+    margin-right: -5px;
+    width: 50px;
+}
+#genre {
+    margin-left: 10px;
+}
+#nfdiv {
+    padding-left: 20px;
+    background-color: rgb(245, 179, 179);
+}
+#df {
+    margin-bottom: -13px;
+}
+#genre {
+    margin-left: 10px;
+}
+#fdiv {
+    padding-left: 20px;
+    background-color: rgb(245, 179, 179);
+}
+#review {
+    margin-left: 10px;
+}

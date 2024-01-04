@@ -1,0 +1,84 @@
+<!DOCTYPE html id="nonFiction">
+  <head>
+    <title>Non-Fiction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <br>
+    <div class="col-xs-12 header_div text-center">
+      <h3>Non-Fiction</h3>
+      <br>
+    </div>
+    <div id="nfdiv">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="orig_nf">
+      <input type="text" id="nf_input" class="form-control" placeholder="'Book' by 'author'">
+      <br>
+      <form action="/form/submit" method="post">
+        <div id="dnf">
+          <div>
+          <label id="r">Read</label>
+          <input type="checkbox" id="nf_read"/>
+        </div>
+      </form>
+      <br>
+      <label id="nf_genre_dropdown" for="genre">Choose the genre:</label>
+      <select name="genre" id="genre">
+        <option value="none"></option>
+        <option value="biography&journalism">Biography and Journalism</option>
+        <option value="travel-guides">Travel Guides</option>
+        <option value="health&wellness">Health and Wellness</option>
+        <option value="memoirs&autobiography">Memoirs and Autobiography</option>
+        <option value="religion&spirituality">Religion and Spirituality</option>
+        <option value="psychology">Psychology</option>
+        <option value="music">Music</option>
+        <option value="art">Art</option>
+        <option value="literary-realism">Literary-realism</option>
+        <option value="history">History</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="science">Science</option>
+        <option value="politics&social-science">Politics and Social-science</option>
+        <option value="self-help">Self-help</option>
+        <option value="business&economics">Business and Economics</option>
+        <option value="parenting&family">Parenting and Family</option>
+        <option value="childrens">Childrens</option>
+        <option value="educational-guides">Educational Guides</option>
+      </select>
+      <br>
+      <br>
+      <label id="nf_review_dropdown" for="review">Give Review:</label>
+      <select name="review" id="review">
+        <option value="none"></option>
+        <option value="excellent">Excellent</option>
+        <option value="very-good">Very Good</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="bad">Bad</option>
+        <option value="very bad">Very Bad</option>
+        <option value="horrible">Horrible</option>
+      </select>
+    </div>
+      <br>
+      <div id="repeat_NonFiction">
+        <hr>
+        <button onclick="repeat_NF()" class="btn btn-danger">New Book</button>
+        <br>
+      </div>
+    
+</div>
+
+    <br>
+    </div>
+  </body>
+</html>
+

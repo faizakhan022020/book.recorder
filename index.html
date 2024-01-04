@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+  <head>
+    <title>Book Records Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center" id="header_div">
+      <h2>Book Records</h2>
+      <br>
+    </div>
+    <br>
+    <div class="main_div" id="content_div">
+        <br>
+      <center id="content_c">
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h4 id="ongoing_books">My Ongoing Books</h4>
+        <br>
+        <div>
+            <input type="text" id="ongoing_input" class="form-control" placeholder="'Book' by 'author'">
+            <br>
+            <button onclick="sendOngoing()" class="btn btn-danger">Input</button>
+        </div>
+        <hr>
+        <h4 id="tbr_books">Books On My TBR</h4>
+        <br>
+        <div>
+            <input type="text" id="tbr_input" class="form-control" placeholder="'Book' by 'author'">
+            <br>
+            <button onclick="sendTBR()" class="btn btn-danger">Input</button>
+            <button id="redirect_tbr" onclick="redirectTotbr()" class="btn btn-danger">Visit Page</button>
+            
+        </div>
+        <hr>
+        <h4>Book Category</h4>
+        <br>
+        <button id="redirect_fiction" class="btn btn-danger" onclick="redirectToFiction()">Fiction</button>
+        <br>
+        <br>
+        <br>
+        <button id="redirect_nonfiction" class="btn btn-danger" onclick="redirectToNonfiction()">Non-Fiction</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+      </center>
+      <br>
+    </div>
+    <div class="copy_right_footer text-right col-xs-12">
+      Developed by fk
+      <br>
+      <br>
+      <br>
+    </div>
+    <script src="main.js"></script>
+    
+  </body>
+  
+</html>
